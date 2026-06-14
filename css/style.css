@@ -1,0 +1,620 @@
+/*global*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0A316C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.cti-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 90px;
+    height: auto;
+}
+
+header h1 {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-size: clamp(24px, 2.5vw, 36px);
+}
+
+header h2 {
+    margin: 0px;
+    font-size: clamp(16px, 2vw, 24px);
+    text-align: left;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-container nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.nav-container nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(11px, 1vw, 15px);
+    font-weight: 600;
+    padding: 6px 12px;
+    min-height: 34px;
+    border-radius: 10px;
+    background-color: #0A316C;
+    transition: 0.3s;
+}
+
+.nav-container nav a:hover {
+    background-color: #81ECEC;
+}
+
+footer {
+    background-color: #0A316C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(12px, 1vw, 16px);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #81ECEC;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*acceuil*/
+
+.presentation {
+    background-color: #0A316C;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.9s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-container button {
+    background-color: #f4f4f4;
+    color: #0A316C;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.carousel-container button:hover {
+    color: #81ECEC;
+}
+
+.info {
+    background-color: #0A316C;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.info li {
+    margin-bottom: 10px;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info li::before {
+    content: "▶  ";
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    background-color: #0A316C;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(14px, 1.5vw, 20px);
+    padding: 10px;
+}
+
+.link a:hover{
+    color: #81ECEC;
+}
+
+
+
+
+
+
+
+
+/* contat */
+.map-container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.coo {
+    color: white;
+    background-color: #0A316C;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #0A316C;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.form-container label {
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.form-container input, .form-container textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.form-container button {
+    background-color: #0A316C;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: clamp(14px, 1.5vw, 20px);
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #81ECEC;
+}
+
+.carousel-item-form {
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: #0A316C;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.procedure {
+    background-color: #0A316C;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.procedure ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.procedure ol {
+    margin-bottom: 10px;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.procedure li {
+    margin-bottom: 15px;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+
+
+
+
+
+
+
+
+
+/* formation */
+.formation-presentation {
+    background-color: #0A316C;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formation-table {
+    margin-bottom: 40px;
+}
+
+.formation-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.formation-table th {
+    background-color: #0A316C;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #dcdcdc;
+}
+
+.formation-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    border: 1px solid #dcdcdc;
+}
+
+.formation-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+/*enseignants*/
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.teacher-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.teacher-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.teacher-role {
+    color: #0A316C;
+    font-weight: bold;
+}
+
+.teacher-popup {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    background-color: rgba(10, 49, 108, 0.95);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease;
+
+}
+
+.teacher-card:hover .teacher-popup {
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* pro*/
+
+.project {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.project-card {
+    background-color: #0A316C;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-role {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cyber-container {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cyber-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*chatbot*/
+
+.chatbot-container {
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.chatbot-container h1 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-message {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 70%;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+.bot-message {
+    background-color: #EAEAEA;
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 70%;
+    margin-bottom: 15px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+/* morpion*/
+
+.morpion-container {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.morpion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* apropos */
+
+.apropos-container {
+    background-color: #0A316C;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+

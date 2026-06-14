@@ -1,0 +1,106 @@
+[
+    {
+        "keywords": ["bonjour", "salut", "hello"],
+        "answer": "Bonjour Comment puis-je vous aider ?"
+    },
+
+    {
+        "keywords":["comment", "ca vas"],
+        "answer": "Je vais bien, merci ! Et vous ?"
+    },
+
+    {
+        "keywords": ["formation", "formations"],
+        "answer": "L'EFREI propose des formations en informatique, cybersécurité, IA et réseaux."
+    },
+
+    {
+        "keywords": ["département", "departement"],
+        "answer": "Le département d'informatique de l'EFREI couvre les domaines du développement, de la cybersécurité et de l'IA."
+    },
+
+    {
+        "keywords": ["questions", "question"],
+        "answer": "N'hésitez pas à poser vos questions sur les formations, les projets ou la vie étudiante à l'EFREI."
+    },
+
+    {
+        "keywords": ["cybersécurité", "cyber"],
+        "answer": "L'EFREI propose des formations spécialisées en cybersécurité et réseaux."
+    },
+
+    {
+        "keywords": ["ia", "intelligence artificielle"],
+        "answer": "Les étudiants travaillent sur le Machine Learning, les réseaux neuronaux et les chatbots."
+    },
+
+    {
+        "keywords": ["alternance"],
+        "answer": "Les formations sont disponibles en initiale et en alternance."
+    },
+
+    {
+        "keywords": ["adresse", "villejuif"],
+        "answer": "Le campus principal est situé à Villejuif."
+    },
+
+    {
+        "keywords": ["merci"],
+        "answer": "Avec plaisir ! N'hésitez pas à poser d'autres questions."
+    },
+
+    {
+        "keywords": ["projets", "projet"],
+        "answer": "Les étudiants réalisent des projets en développement web, IA et cybersécurité."
+    },
+
+    {
+        "keywords": ["enseignants", "professeurs"],
+        "answer": "Les enseignants sont des professionnels expérimentés dans leurs domaines."
+    },
+
+    {
+        "keywords": ["contact", "email"],
+        "answer": "Vous pouvez contacter l'EFREI à contact@efrei.fr"
+    },
+
+    {
+        "keywords": ["horaires", "heures"],
+        "answer": "Les bureaux sont ouverts de 9h à 18h du lundi au vendredi."
+    },
+
+    {
+        "keywords": ["admission", "candidature"],
+        "answer": "Les admissions se font via Parcoursup pour les premières années."
+    },
+
+    {
+        "keywords": ["bourses", "aides financières"],
+        "answer": "Des bourses sont disponibles pour les étudiants méritants et en difficulté financière."
+    },
+
+    {
+        "keywords": ["vie étudiante", "associations"],
+        "answer": "Il y a de nombreuses associations étudiantes pour s'impliquer dans la vie du campus."
+    },
+
+    {
+        "keywords": ["stages", "entreprises"],
+        "answer": "Les étudiants effectuent des stages en entreprise pour acquérir une expérience professionnelle."
+    },
+
+    {
+        "keywords": ["international", "échanges"],
+        "answer": "L'EFREI propose des programmes d'échange avec des universités partenaires à l'international."
+    },
+    
+    {
+        "keywords": ["amine", "koumtani", "Amine", "Koumtani"],
+        "answer": "ce mec me tape serieusement sur le systeme je me demande comment il a fait pour integrer l'efrei "
+    },
+
+    {
+        "keywords": ["anass", "Anass", "Moumen", "moumen"],
+        "answer": "Un ingenieur et expert en informatique, charismatique beau... Anass est une reel source d'inspiration pour les futur ingenieurs de l'efrei, il a un parcours exemplaire et une personalité qui ne laisse personne indifférent"
+    }
+]

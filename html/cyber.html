@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab XSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cyber.js" defer></script>
+</head>
+
+<body>
+    <a href="./projets.html"><<- Retour</a>
+    <h1>Formulaire de test XSS</h1>
+    <p>un indice ? c0d3 $0uRC3</p>
+
+    <!-- L'un des champ utilise la méthode innerHTML pour afficher les données, essayez d'injecter un payload dans l'un des champs -->
+    
+    <div class="cyber-container">
+        <form id="xssForm">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom">
+
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email">
+
+            <br><br>
+
+            <label for="commentaire">Commentaire :</label>
+            <input type="text" id="commentaire">
+
+            <br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <h2>Vos Informations :</h2>
+
+    <p id="resultNom"></p>
+    <p id="resultEmail"></p>
+
+    <div id="resultCommentaire"></div>
+    
+    <!-- par exemple <img src=x onerror=alert('XSS')> dans commentaire ?-->
+
+</body>
+
+</html>
